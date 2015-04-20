@@ -1,0 +1,26 @@
+{
+  "name": "thome",
+  "version": "1.0.0",
+  "description": "taho's web pages",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/semitaho/thome.git"
+  },
+  "keywords": [
+    "tirc",
+    "tblog",
+    "tvideo"
+  ],
+  "author": "Toni Aho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/semitaho/thome/issues"
+  },
+  "homepage": "https://github.com/semitaho/thome",
+  "devDependencies": {
+    "gulp": "^3.8.11"
+  }
+}
