@@ -21,11 +21,18 @@
   },
   "homepage": "https://github.com/semitaho/thome",
   "devDependencies": {
+    "browserify": "^9.0.8",
     "gulp": "^3.8.11",
     "gulp-ftp": "^1.0.3",
     "gulp-jade": "^1.0.0",
+    "gulp-react": "^3.0.1",
     "gulp-stylus": "^2.0.1",
     "gulp-util": "^3.0.4",
-    "gulp-webserver": "^0.9.0"
+    "gulp-webserver": "^0.9.0",
+    "nib": "^1.1.0",
+    "react": "^0.13.2",
+    "react-router": "^0.13.2",
+    "reactify": "^1.1.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }

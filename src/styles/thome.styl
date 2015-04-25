@@ -1,7 +1,22 @@
 @import "variables"
+@import "animation"
 
-h1
+body
+  height 100%
+  box-sizing border-box
+
+.content
   color headercolor
+  position absolute
+  white-space nowrap
+  top 50%
+  left 50%
+  right auto
+  transform translate(-50%, -50%)
+  font-size 3em
+ // animation link 2s
+  //-webkit-animation link 2s
+
 
 
 header, footer
@@ -9,4 +24,33 @@ header, footer
   margin-left auto
   margin-right auto
   width 100%
-  height 300px;
+  position absolute
+  min-height 20%
+  left 0
+  right 0
+
+
+video
+  height 100% !important
+  width auto
+  background black
+footer
+  bottom 0
+header
+  top 0
+  nav
+    position absolute
+    left 50%
+    top 50%
+    -webkit-transform-origin -50% -50%
+
+    //animation headernav 3s 3s forwards
+    -webkit-animation headernav 2s 2s both
+    a
+      color white
+      font-size 2em
+      margin 1em
+      box-sizing border-box
+      text-decoration none
+      &:hover
+        background lightenlinkcolor
