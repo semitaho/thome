@@ -1,5 +1,6 @@
 var React = require('react');
 var Home = require('./views/home.jsx')
+var Location = require('./components/location.jsx');
 var About = require('./views/about.jsx')
 
 var Router = require('react-router');
@@ -29,6 +30,7 @@ var App = React.createClass({
                         <Link to="blogs">Blogs</Link>
                         <Link to="about">About Me</Link>
                     </nav>
+                    <Location></Location>
                 </header>
                 <div className="content">
                     <RouteHandler />
