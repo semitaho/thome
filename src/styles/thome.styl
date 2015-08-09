@@ -5,37 +5,54 @@ body
   height 100%
   box-sizing border-box
 
+
 .content
   color headercolor
   position absolute
+  background #f2f2f2
   white-space nowrap
-  top 50%
-  left 50%
-  right auto
-  transform translate(-50%, -50%)
-  font-size 3em
- // animation link 2s
-  //-webkit-animation link 2s
+  padding 1em
+  color: black;
+  bottom 0
+  overflow-y auto
+  font-weight normal
+  font-size 1.5em
+  border-radius 15px
+
+  top 20%
+  left 15%
+  right 15%
+  bottom 0
+
+  .data
+    animation fadein 2s
+    -webkit-animation fadein 2s
+
+.leftsidebar
+  background headercolor
 
 
 
-header, footer
+
+header
   background  headercolor
-  margin-left auto
-  margin-right auto
-  width 100%
-  position absolute
-  min-height 20%
-  left 0
-  right 0
 
+footer
+  background  headercolor
 
-#location
-  right 2em
-  top 50%
-  transform translate(0,-50%)
-  position absolute
-  color white
+.profile
+  width 50%
+  text-align center
+  display block
+.hidden {
+  display none
+  -webkit-animation fadeout 1s
+}
+
+.visible {
+  -webkit-animation fadein 1s
+}
+
 
 video
   height 100% !important
@@ -44,20 +61,90 @@ video
 footer
   bottom 0
 header
-  top 0
   nav
-    position absolute
-    left 50%
-    top 50%
-    -webkit-transform-origin -50% -50%
+    .active
+      font-weight bold
 
     //animation headernav 3s 3s forwards
-    -webkit-animation headernav 2s 2s both
+    //-webkit-animation headernava 2s .5s forwards
     a
       color white
-      font-size 2em
-      margin 1em
-      box-sizing border-box
-      text-decoration none
+      //font-size 2em
+      //box-sizing border-box
+
       &:hover
+        text-decoration underline
         background lightenlinkcolor
+
+label
+  display block
+.react-markdown-textarea__textarea, #title
+  width 90%
+
+.react-markdown-textarea__nav
+  display none
+
+.titlebox
+
+  margin-bottom 1em
+  .titlelabel
+    padding 1em
+  input
+    padding: 2px;
+    border: 1px solid #999;
+    font-size: 10pt;
+    background-color: #fff;
+    max-width: 100%;
+
+
+.introduction
+  white-space normal
+
+  .info
+    -webkit-animation fadein 2s
+    box-sizing border-box
+    min-height 100%
+    border-top 1px solid bloginfo
+    border-bottom 1px solid bloginfo
+    margin 1em 0
+    height 2em
+    padding 0 0
+
+    line-height 2em
+    font-size .7em;
+    width 100%
+    .details
+      float left
+
+    .edit
+      float right
+
+  section
+    margin-top 1em
+
+
+.breadcrumbs
+  position absolute
+  top 0
+
+.record_table
+  width 100%
+  margin-top 2em
+  border-collapse collapse
+
+
+
+.follow
+  position static
+  margin-right 0
+  margin-left auto
+  background none
+  text-align right
+
+article
+  .info
+
+    .edit
+      float right
+  .footer
+    background none
