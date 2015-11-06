@@ -71,7 +71,7 @@ gulp.task('deploy', function () {
         .pipe(ftp({
             host: 'www.elisanet.fi',
             user: 'd639809',
-            pass: 'kurkottava'
+            pass: '********'
         }))
         .pipe(gutil.noop());
 
